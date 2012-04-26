@@ -1,0 +1,113 @@
+/*
+	A NC State brand-friendly color theme alternative
+	Blue with beige accents
+*/
+
+
+/* =Global
+----------------------------------------------- */
+body {
+	background: #c5bd9d;
+	color: #333;
+}
+#page {
+	/*border:solid 1px #e5e1d0;*/
+	border-top:none;
+}
+
+/* Links */
+
+
+/* =Header
+----------------------------------------------- */
+
+#branding, #supplementary, .widget_search {
+	background-color:#cc6600 !important;
+}
+#site-title a {
+	color: #fff;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color:#eee !important;
+}
+
+/* tagline is turned off 
+#site-description {
+	color: #383838;
+}*/
+
+/* edge color above and below header image */
+#branding img {
+}
+
+/* =Menu
+----------------------------------------------- */
+
+#access {
+	background: #5c5541; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#5B523B, #332E20);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5B523B), to(#332E20)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#5B523B, #332E20);
+	
+}
+
+/* =Content
+----------------------------------------------- */
+
+.page-title {
+	color: #ccc;
+}
+
+/*	=Widgets
+----------------------------------------------- */
+/* default widget colors */
+.widget, .widget_nav_menu {
+	background:#a79574;
+	border:solid 3px #e5e1d0;
+	font-weight:100;
+	color:#000;
+}
+.widget a {
+	color:#fff;
+	font-weight:bold;
+}
+.widget-title,
+.widget_nav_menu .widget-title {
+	color: #fff;
+	background:#332E20;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/* base widgets can be customized to brand colors
+.widget_nav_menu
+.widget_categories
+.widget_recent_entries
+.widget_recent_comments
+.widget_archive
+*/
+
+/* Meta Widget */
+.widget_meta  {background:#666;}
+.widget_meta .widget-title
+ {background-color:#383838;}
+
+/* Search Widget */
+.widget_search {
+}
+
+
+/* =Footer
+----------------------------------------------- */
+
+#supplementary {
+	border: none;
+	color:#d1d1d1;
+}
+
+#supplementary a {
+	color:#d1d1d1;
+}
+
