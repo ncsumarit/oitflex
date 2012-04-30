@@ -29,15 +29,7 @@ get_header(); ?>
 						<ul>
 						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
 						</ul>
-					</div>
-
-					<?php
-					/* translators: %1$s: smilie */
-					$archive_content = sprintf( __( 'Try looking in the monthly archives. %1$s', 'twentyeleven' ), convert_smilies( ':)' ) ) . '<br/>';
-					the_widget( 'WP_Widget_Archives', array('count' => 0 , 'dropdown' => 1 ), array( 'after_title' => '</h2>'.$archive_content ) );
-					?>
-
-					
+					</div>	
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
