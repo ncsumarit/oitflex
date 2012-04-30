@@ -29,6 +29,7 @@ body {
 }
 #branding hgroup {
 	margin: 0 4.6%;
+	min-height:80px;
 	/*background:url(images/title.png) no-repeat;*/
 }
 #access {margin:0; padding:0}
@@ -103,6 +104,7 @@ div #secondary, .singular #secondary {
 .one-column #primary #content, article.intro, .page-template-showcase-php #primary #content  {
 	margin: 0 2.6%;
 	width: 960px;
+	/*border:solid 1px #a00;*/
 }
 .page-template-showcase-php #primary {
 	width:1000px;	
@@ -143,7 +145,7 @@ div #secondary, .singular #secondary {
 	color: #333;
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
-	margin:0 0 1.65625em;
+	margin:0 0 0.85625em;
 	/*display:none;*/
 }
 #branding img {
@@ -394,6 +396,9 @@ article.feature-image.small .entry-summary {
 	letter-spacing:.1em;
 		
 }
+
+/* Calendar widget */
+table #wp-calendar thread {color:#006666;}
 
 /* Search Widget */
 .widget_search {background-color:#c00;}
