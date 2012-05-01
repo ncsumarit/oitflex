@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Slider Template
+ * Description: A Page Template that displays a small slider of all images attached to the page.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -12,12 +13,13 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header(noBanner); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
 
-			 <?php do_shortcode('[portfolio_slideshow]'); ?>
+			 <?php get_page ($page_id); ?>
+			 <?php echo do_shortcode('[portfolio_slideshow id=' . $page_id . ']'); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
