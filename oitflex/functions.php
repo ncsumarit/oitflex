@@ -28,15 +28,55 @@ add_action( 'after_setup_theme', 'wptips_remove_header_images', 11 );
 function wptips_new_default_header_images() {
     $child2011_dir = get_bloginfo('stylesheet_directory');
     register_default_headers( array (
-        'bike' => array (
+        '1911' => array (
+            'url' => "$child2011_dir/images/headers/1911.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/1911-thumbnail.jpg", // 230 x 53px
+            'description' => __( '1911 Building', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'belltower' => array (
+            'url' => "$child2011_dir/images/headers/belltower.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/belltower-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'NCSU Belltower', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'bike' => array (
             'url' => "$child2011_dir/images/headers/bike.jpg",
             'thumbnail_url' => "$child2011_dir/images/headers/bike-thumbnail.jpg", // 230 x 53px
             'description' => __( 'Bike in snow on campus', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'fox' => array (
+            'url' => "$child2011_dir/images/headers/fox.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/fox-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Mary Anne Fox Courtyard', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'gregg' => array (
+            'url' => "$child2011_dir/images/headers/gregg-garden.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/gregg-garden-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Garden behind Gregg Museum', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'hillsborough' => array (
+            'url' => "$child2011_dir/images/headers/hillsborough.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/hillsborough-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Hillsborough Street', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'holladay' => array (
+            'url' => "$child2011_dir/images/headers/holladay.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/holladay-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Holladay Hall', 'child2011' )
         ), // if you have more than one image you will need a comma between all of them, except for the last one
 		'leazar' => array (
             'url' => "$child2011_dir/images/headers/leazar.jpg",
             'thumbnail_url' => "$child2011_dir/images/headers/leazar-thumbnail.jpg", // 230 x 53px
             'description' => __( 'Leazar Building', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'spring' => array (
+            'url' => "$child2011_dir/images/headers/spring.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/spring-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Spring on campus', 'child2011' )
+        ), // if you have more than one image you will need a comma between all of them, except for the last one
+		'spring-hall' => array (
+            'url' => "$child2011_dir/images/headers/spring-hall.jpg",
+            'thumbnail_url' => "$child2011_dir/images/headers/spring-hall-thumbnail.jpg", // 230 x 53px
+            'description' => __( 'Building in spring', 'child2011' )
         ), // if you have more than one image you will need a comma between all of them, except for the last one
 		'statue' => array (
             'url' => "$child2011_dir/images/headers/statue.jpg",
@@ -57,17 +97,8 @@ function wptips_new_default_header_images() {
             'url' => "$child2011_dir/images/headers/winston.jpg",
             'thumbnail_url' => "$child2011_dir/images/headers/winston-thumbnail.jpg", // 230 x 53px
             'description' => __( 'Winston Hall', 'child2011' )
-        ), // if you have more than one image you will need a comma between all of them, except for the last one
-		'workspace' => array (
-            'url' => "$child2011_dir/images/headers/workspace.jpg",
-            'thumbnail_url' => "$child2011_dir/images/headers/workspace-thumbnail.jpg", // 230 x 53px
-            'description' => __( 'Casual campus study space', 'child2011' )
-        ), // if you have more than one image you will need a comma between all of them, except for the last one
-        'fox' => array (
-            'url' => "$child2011_dir/images/headers/fox.jpg",
-            'thumbnail_url' => "$child2011_dir/images/headers/fox-thumbnail.jpg", // 230 x 53px
-            'description' => __( 'Mary Ann Fox plaza at NC State', 'child2011' )
-        ) // the last image does not get a comma
+        ) // if you have more than one image you will need a comma between all of them, except for the last one
+		
     ));
 }
 add_action( 'after_setup_theme', 'wptips_new_default_header_images' );
@@ -146,3 +177,14 @@ function ncsubrand_enqueue_color_scheme( $color_scheme ) {
         wp_enqueue_style( 'fall', get_stylesheet_directory_uri() . '/colors/fall.css', array(), null );
 }
 
+// ADD ALTERNATE SIDEBAR OPTION
+register_sidebar( array(
+		'name' => __( 'Alternate Sidebar' ),
+		'id' => 'alt-sidebar',
+		'description' => __( 'The sidebar for the optional Sidebar Template' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+?>
