@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Plain Template
+ * Description: A Page Template that hides the header graphic
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -12,12 +13,10 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header(noBanner); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-
-			 <?php do_shortcode('[portfolio_slideshow]'); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

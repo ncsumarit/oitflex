@@ -70,15 +70,13 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body  <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>    
     			<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
        		</hgroup>
 			<?php get_search_form(); ?>
-			
-           
 			
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>

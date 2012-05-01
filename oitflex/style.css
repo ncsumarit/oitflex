@@ -1,8 +1,6 @@
 /*
 Theme Name: OIT Flex
 Theme URI: http://oitdesign.ncsu.edu
-Github Theme URI: https://github.com/ncsumarit/oitflex
-Version: v1.0.0
 Author: OIT Design, Jen Riehle
 Author URI: http://oitdesign.ncsu.edu/
 Description: A child of the Twenty-Eleven theme with a flexible layout, offering style and image options specific to NC State University and falling within the university brand book guidelines. Created by OIT Design.
@@ -312,37 +310,13 @@ article.intro {
 .error404 #main .widget li a {color:#666;}
 
 
-/* =Featured Posts Slider
+/* =Slider
 ----------------------------------------------- */
-#primary .featured-posts {
-	margin:0;
-	padding:8px;
-	background-color:#e1e1e1;
-	height:276px;
+.slideshow-meta, .pscarousel {padding-left:10px;}
+
+.page-template-slider-php .portfolio-slideshow {
 	overflow:hidden;
 }
-
-#primary .featured-posts section {padding:0;margin:0;width:1000px; background-color:#e1e1e1;}
-
-.featured-posts section.featured-post article {
-	padding:0px;
-	margin:4px 0 3px 10px; 
-	float:left; width:580px; }
-.featured-posts section.featured-post img {
-	padding:0;
-	margin:0 32px 8px 0;
-	float:right; border:solid 3px #333;}
-
-section.featured-post .attachment-small-feature {
-	margin:0px; padding:0px;
-	float:right;
-	max-width:340px;
-	max-height:240px;
-	width:auto;	
-}
-nav.feature-slider li {padding:0; margin:0 6px 0 0;}
-article.feature-image.small .entry-summary {
- font-size:.9em; color:#333; }
 
 
 /* =Widgets
@@ -393,8 +367,13 @@ article.feature-image.small .entry-summary {
 .textwidget {
 	padding: 4px;
 	font-size:1.15em;
-	letter-spacing:.1em;
-		
+	letter-spacing:.1em;	
+}
+
+/* Contact sidebar widget */
+.widget_custom-contact-forms input,
+.widget_custom-contact-forms textarea {
+	max-width:170px !important;
 }
 
 /* Calendar widget */

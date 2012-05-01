@@ -22,6 +22,7 @@ get_header(); ?>
 
 					<?php get_search_form(); ?>
 
+					
 					<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
 
 					<div class="widget">
@@ -29,7 +30,11 @@ get_header(); ?>
 						<ul>
 						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
 						</ul>
-					</div>	
+					</div>
+
+					
+
+					
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
