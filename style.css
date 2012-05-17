@@ -378,6 +378,9 @@ article.intro {
 
 /* Calendar widget */
 table #wp-calendar thread {color:#006666;}
+/* Google calendar widget */
+.gce-widget-list .gce-list .gce-list-event {background:none !important;}
+.gce-widget-list a {font-weight:normal !important;}
 
 /* Search Widget */
 .widget_search {background-color:#c00;}
