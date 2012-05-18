@@ -339,13 +339,13 @@ article.intro {
 	font-weight:bold;
 }
 .widget-title {
-	padding:2px 5px;
+	padding:10px 5px;
 	color: #fff;
 	background:#333333;
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	line-height: 2.6em;
+	line-height: 1.1em;
 	text-transform: uppercase;
 }
 .widget ul {
@@ -378,6 +378,12 @@ article.intro {
 
 /* Calendar widget */
 table #wp-calendar thread {color:#006666;}
+
+/* Google Calendar Widget */
+.gce-widget-list .gce-list div span {color:#d1d1d1 !important;}
+.gce-widget-list .gce-list .gce-list-event {background:none !important;}
+.gce-widget-list a {font-weight:normal !important;}
+ul.gce-list li {margin-bottom:10px !important;}
 
 /* Search Widget */
 .widget_search {background-color:#c00;}
