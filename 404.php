@@ -23,15 +23,16 @@ get_header(); ?>
 					<?php get_search_form(); ?>
 
 					
-					<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
+					<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 5 ), array( 'widget_id' => '404' ) ); ?>
 
 					<div class="widget">
 						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'twentyeleven' ); ?></h2>
 						<ul>
-						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
-						</ul>
+						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 5 ) ); ?>
+						</ul>    
 					</div>
-
+                    
+					<?php the_widget('WP_Widget_Archives', 'dropdown=1&count=1'); ?> 
 					
 
 					
