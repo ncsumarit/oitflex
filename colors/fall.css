@@ -11,8 +11,7 @@ body {
 	color: #333;
 }
 #page {
-	/*border:solid 1px #e5e1d0;*/
-	border-top:none;
+	border:solid 1px #eee;
 }
 
 /* Links */
@@ -20,9 +19,8 @@ body {
 
 /* =Header
 ----------------------------------------------- */
-
 #branding, #supplementary, .widget_search {
-	background-color:#cc6600 !important;
+	background-color:#c60 !important;
 }
 #site-title a {
 	color: #fff;
@@ -33,10 +31,9 @@ body {
 	color:#eee !important;
 }
 
-/* tagline is turned off 
 #site-description {
-	color: #383838;
-}*/
+	color: #fff;
+}
 
 /* edge color above and below header image */
 #branding img {
@@ -52,6 +49,15 @@ body {
 	background: -webkit-linear-gradient(#5B523B, #332E20);
 	
 }
+#access a:focus,
+   #access ul ul :focus {
+	background:#e5e1d0 !important;
+   }
+   
+   #access li.hover > a,
+   #access ul ul .hover > a {
+	background:#e5e1d0 !important;
+   }
 
 /* =Content
 ----------------------------------------------- */

@@ -21,6 +21,7 @@ body {
 }
 #page {
 	margin: 0em auto;
+	margin-top:6px;
 	max-width: 1000px;
 	border:2px #fff solid;
 
@@ -34,9 +35,30 @@ body {
 #access div {
 	margin: 0 3.6%;
 }
-:focus {/* remember to define focus styles! */
+a:focus {/* remember to define focus styles! */
 	outline: 1;
 }
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+a.assistive-text:active,
+a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}
+
+
 #primary {
 	float: left;
 	margin: 2px -26.4% 2px 0;
@@ -179,11 +201,14 @@ a {
 	box-shadow: none;
 }
 
-#access li:hover > a,
-#access ul ul :hover > a,
-#access a:focus {
-	background: #fff;
+#access a {
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
 }
+
 #access li:hover > a,
 #access a:focus {
 	background: #fff; /* Show a solid color for older browsers */
@@ -192,7 +217,11 @@ a {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9f9f9)); /* Older webkit syntax */
 	background: -webkit-linear-gradient(#fff, #f9f9f9);
 	color: #373737;
+	
 }
+
+/* Extra styles to allow keyboard accessibility of dropdown menus in /js/ folder */
+
 
 
 /* =Content

@@ -19,21 +19,23 @@ body {
 
 /* =Header
 ----------------------------------------------- */
-
-#branding {
-	background-color:#c00;
+#branding, .widget_search {
+	background-color:#567 !important;
 }
+#supplementary {background-color:#373737 !important;}
+
 #site-title a {
-	color: #eee;
+	color: #fff;
 }
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {
-}
-#site-description {
-	color: #858585;
+	color:#eee !important;
 }
 
+#site-description {
+	color: #fff;
+}
 
 
 /* =Menu

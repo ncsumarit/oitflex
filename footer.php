@@ -30,6 +30,12 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+ jQuery(document).ready(function(){
+   jQuery("body").prepend('<div class="skip-link"><a title="Skip to primary content" href="#content" class="assistive-text">Skip to primary content</a></div>')
+
+ });
+</script>
 
 </body>
 </html>

@@ -18,9 +18,8 @@ body {
 
 /* =Header
 ----------------------------------------------- */
-
 #branding, #supplementary, .widget_search {
-	background-color:#a00 !important;
+	background-color:#b00000 !important;
 }
 #site-title a {
 	color: #fff;
@@ -31,10 +30,9 @@ body {
 	color:#eee !important;
 }
 
-/* tagline is turned off 
 #site-description {
-	color: #383838;
-}*/
+	color: #fff;
+}
 
 
 
