@@ -24,11 +24,9 @@ get_header(); ?>
 		</div><!-- #primary -->
 
 		<div id="secondary" class="widget-area" role="complementary">
-			<?php if ( ! dynamic_sidebar( 'alt-sidebar' ) ) : ?>
+			<?php if ( ! dynamic_sidebar( 'sidebar-6' ) ) : ?>
 
-                <?php
-                the_widget( 'Twenty_Eleven_Ephemera_Widget', '', array( 'before_title' => '<h3 class="widget-title">', 'after_title' => '</h3>' ) );
-                ?>
+               
 
             <?php endif; // end sidebar widget area ?>
         </div><!-- #secondary .widget-area -->

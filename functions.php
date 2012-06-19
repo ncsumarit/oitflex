@@ -177,14 +177,19 @@ function ncsubrand_enqueue_color_scheme( $color_scheme ) {
         wp_enqueue_style( 'fall', get_stylesheet_directory_uri() . '/colors/fall.css', array(), null );
 }
 
-// ADD ALTERNATE SIDEBAR OPTION
-register_sidebar( array(
+// ADD ALTERNATE SIDEBAR OPTION; CALLS AFTER ALL OTHER SIDEBARS HAVE BEEN LOADED
+
+function self_deprecating_sidebar_registration(){
+  register_sidebar( array(
 		'name' => __( 'Alternate Sidebar' ),
-		'id' => 'alt-sidebar',
+		'id' => 'sidebar-6',
 		'description' => __( 'The sidebar for the optional Sidebar Template' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+}
+
+add_action( 'wp_loaded', 'self_deprecating_sidebar_registration' );
 ?>
