@@ -192,4 +192,14 @@ function self_deprecating_sidebar_registration(){
 }
 
 add_action( 'wp_loaded', 'self_deprecating_sidebar_registration' );
+
+// THEME UPDATES
+
+//Initialize the update checker.
+require 'theme-updates/theme-update-checker.php';
+$example_update_checker = new ThemeUpdateChecker(
+    'oitflex',
+    'http://resources.wordpress.ncsu.edu/oitflex/info.json'
+);
+
 ?>
